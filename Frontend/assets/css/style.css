@@ -19,7 +19,7 @@ body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 4rem;
 }
 
 .nav div.main_list {
@@ -51,7 +51,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #7e5494;
+    color: #BCBFDE;
     transition-property: all;
     transition-duration: .2s;
     transition-timing-function: linear;
@@ -224,4 +224,31 @@ body {
     .myP {
         padding: 2%;
     }
+}
+
+.header h1 {
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.473);
+    text-align: center;
+    font-size: 7rem;
+  }
+
+.header {
+    color: white;
+    background-image: url(../img/header-1920x1080.png);
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion_header;
+    animation-duration: 1s;
+}
+
+@keyframes animacion_header {
+    0% {color: rgba(255, 255, 255, 0);}
+    25% {color: rgba(255, 255, 255, 0.250);}
+    50% {color: rgba(255, 255, 255, 0.500);}
+    75% {color: rgba(255, 255, 255, 0.750);}
+    100% {color: white;}
 }
