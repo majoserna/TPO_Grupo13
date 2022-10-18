@@ -2,11 +2,10 @@ html,
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    background-color: aquamarine;
+    background-color: #BCBFDE;
 }
 
 .nav {
@@ -25,6 +24,7 @@ body {
 .nav div.main_list {
     height: 65px;
     float: right;
+    font-weight: 700;
 }
 
 .nav div.main_list ul {
@@ -58,7 +58,7 @@ body {
 }
 
 
-/* Home section */
+/* Inicio */
 
 .navTrigger {
     display: none;
@@ -226,14 +226,14 @@ body {
     }
 }
 
-.header h1 {
+.headerInicio h1 {
     margin: 0;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.473);
     text-align: center;
     font-size: 7rem;
   }
 
-.header {
+.headerInicio {
     color: white;
     background-image: url(../img/header-1920x1080.png);
     background-size: cover;
@@ -241,14 +241,69 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: animacion_header;
-    animation-duration: 1s;
+    animation-name: animacion_headerInicio;
+    animation-duration: 1.5s;
 }
 
-@keyframes animacion_header {
+@keyframes animacion_headerInicio {
     0% {color: rgba(255, 255, 255, 0);}
     25% {color: rgba(255, 255, 255, 0.250);}
     50% {color: rgba(255, 255, 255, 0.500);}
     75% {color: rgba(255, 255, 255, 0.750);}
     100% {color: white;}
 }
+
+/* cards inicio */
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .card {
+    margin: 40px;
+    position: relative;
+    max-width: 350px;
+    max-height: 450px;
+    box-shadow: 0 40px 60px -6px black;
+    background-color: #7E5494;
+    border-radius: 7px;
+  }
+  
+  .card-title {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+  }
+  
+  .card-desc {
+    display: block;
+    font-size: 1.8rem;
+    position: absolute;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color: white;
+    transition: 0.8s ease;
+  }
+  
+  .card:hover .card-desc {
+    opacity: 1;
+    height: 100%;
+  }
+  
+  
