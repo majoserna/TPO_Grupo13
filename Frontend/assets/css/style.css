@@ -78,7 +78,7 @@ body {
         margin: 0;
     }
 
-    .img_header{
+    .img_header {
         height: 272px;
     }
 
@@ -231,26 +231,53 @@ body {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.473);
     text-align: center;
     font-size: 7rem;
-  }
+}
 
 .headerInicio {
     color: white;
-    background-image: url(../img/header-1920x1080.png);
+    background-image: url(../img/header1.png);
     background-size: cover;
     height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: animacion_headerInicio;
+    animation-name: animacion_header;
     animation-duration: 1.5s;
 }
 
-@keyframes animacion_headerInicio {
-    0% {color: rgba(255, 255, 255, 0);}
-    25% {color: rgba(255, 255, 255, 0.250);}
-    50% {color: rgba(255, 255, 255, 0.500);}
-    75% {color: rgba(255, 255, 255, 0.750);}
-    100% {color: white;}
+.headerBlog {
+    color: white;
+    background-image: url(../img/header4.png);
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion_header;
+    animation-duration: 1.3s;
+}
+
+
+@keyframes animacion_header {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    25% {
+        color: rgba(255, 255, 255, 0.250);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 0.500);
+    }
+
+    75% {
+        color: rgba(255, 255, 255, 0.750);
+    }
+
+    100% {
+        color: white;
+    }
 }
 
 /* cards inicio */
@@ -262,9 +289,9 @@ body {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
-  }
-  
-  .card {
+}
+
+.card {
     margin: 40px;
     position: relative;
     max-width: 350px;
@@ -272,24 +299,24 @@ body {
     box-shadow: 0 40px 60px -6px black;
     background-color: #7E5494;
     border-radius: 7px;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     display: block;
     text-align: center;
     color: #fff;
     font-size: 2rem;
-  }
-  
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: 98%;
     object-fit: cover;
     display: block;
     position: relative;
-  }
-  
-  .card-desc {
+}
+
+.card-desc {
     display: block;
     font-size: 1.8rem;
     position: absolute;
@@ -299,11 +326,132 @@ body {
     padding: 18px 8%;
     background-color: white;
     transition: 0.8s ease;
-  }
-  
-  .card:hover .card-desc {
+}
+
+.card:hover .card-desc {
     opacity: 1;
     height: 100%;
-  }
-  
-  
+}
+
+/* BLOG */
+
+#bodyBlog {
+    background-color: #686183;
+}
+
+#container {
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 350px;
+    width: 700px;
+}
+
+.cardsBlog {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    float: left;
+    width: 40%;
+}
+
+#container .cardsBlog h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    color: #344055;
+    margin: 0;
+
+}
+
+#container .cardsBlog h1:before {
+    position: absolute;
+    content: '';
+    right: 0%;
+    top: 0%;
+    transform: translate(25px, -15px);
+    display: inline-block;
+    background: #ffe6e6;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+    margin: 0;
+    animation: chan-sh 6s ease infinite;
+
+}
+
+#container .cardsBlog>p {
+    font-size: 18px;
+    color: #7d7d7d;
+
+}
+
+.control {
+    position: absolute;
+    bottom: 20%;
+    left: 22.8%;
+
+}
+
+.btn {
+
+    transform: translateY(0px);
+    transition: 0.3s linear;
+    background: #809fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+
+}
+
+.btn:hover {
+    background: #1a66ff;
+}
+
+
+.btn span {
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0;
+
+}
+
+.btn .leer {
+    z-index: 3;
+    font-weight: bolder;
+}
+
+.blogImg {
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    width: 45%;
+
+}
+
+#container img {
+    width: 100%;
+    height: 100%;
+}
+
+.blogImg:hover img {
+    transition: all 0.3s ease-out;
+}
+
+.blogImg:hover img {
+    transform: scale(1.2, 1.2);
+}
