@@ -1,6 +1,144 @@
 body {
-    background-image: url(../media/starry-night-sky.jpg);
-    background-position: center;
-    background-size: contain;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
+
+/*INICIO Banner con título*/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.banner h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 3px 0px 10px rgba(0,0,0,0.61);
+}
+/*FIN Banner con título*/
+
+/* INICIO iframe Hubble birthday */
+
+.sc-hubble-birthday {
+  background-color: rgba(64, 93, 171, 0.7);
+  max-width: 1200px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.hubble-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.hubble-iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .hubble-iframe-container {
+    padding-bottom: 175%;
+  }
+}
+
+/* FIN iframe Hubble birthday */
+
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .lightbox-gallery, video-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .lightbox-gallery div > img, video-gallery div > iframe {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .lightbox-gallery div, video-gallery div {
+    margin: 10px;
+    flex-basis: 180px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .lightbox-gallery, video-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lightbox > div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /*Lighbox CSS*/
+  
+  .lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .lightbox img {
+    display: block;
+    margin: auto;
+  }
+  
+  .lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+  }
+  
+  .github-link {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .github-link:hover,
+  .github-link:active,
+  .github-link:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: #211F37;
+  }
