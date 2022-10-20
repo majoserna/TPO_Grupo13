@@ -14,6 +14,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./assets/js/custom.js"></script>
+
 </head>
 
 <body>
@@ -70,21 +74,8 @@
 
 
 
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="./assets/js/custom.js"></script>
 
-<!-- Función utilizada para reducir la barra de navegación eliminando rellenos y agregando fondo negro -->
-<script>
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
-        console.log("OK");
-    } else {
-        $('.nav').removeClass('affix');
-    }
-});
-</script>
+
 
 </body>
 </html>

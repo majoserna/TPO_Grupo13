@@ -254,7 +254,7 @@ body {
     justify-content: center;
     align-items: center;
     animation-name: animacion_header;
-    animation-duration: 1.3s;
+    animation-duration: 1.s;
 }
 
 
@@ -339,119 +339,55 @@ body {
     background-color: #686183;
 }
 
-#container {
-    box-shadow: 0 15px 30px 1px grey;
-    background: rgba(255, 255, 255, 0.90);
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 5em auto;
-    height: 350px;
-    width: 700px;
-}
-
-.cardsBlog {
-    position: relative;
-    overflow: hidden;
+.box {
+    border-radius: 10px;
     padding: 30px;
-    height: 100%;
-    float: left;
-    width: 40%;
+    max-width: 1000px;
 }
 
-#container .cardsBlog h1 {
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    color: #344055;
-    margin: 0;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px;
+
 
 }
 
-#container .cardsBlog h1:before {
-    position: absolute;
-    content: '';
-    right: 0%;
-    top: 0%;
-    transform: translate(25px, -15px);
-    display: inline-block;
-    background: #ffe6e6;
+.grid>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(187, 163, 206, 1);
+    background-color: #fff;
+    padding: 5% 0;
+    border-radius: 20px;
+}
+
+
+.grid .text {
+    padding: 10px 20px 20px 30px;
+    color: #808285;
+    margin-bottom: 20px;
+}
+
+.grid .btn {
+    margin-top: 20px;
+    background-color: #e0d4e9;
+    border: 0;
     border-radius: 5px;
-    font-size: 14px;
-    padding: 5px;
-    color: white;
-    margin: 0;
-    animation: chan-sh 6s ease infinite;
-
-}
-
-#container .cardsBlog>p {
-    font-size: 18px;
-    color: #7d7d7d;
-
-}
-
-.control {
-    position: absolute;
-    bottom: 20%;
-    left: 22.8%;
-
-}
-
-.btn {
-
-    transform: translateY(0px);
-    transition: 0.3s linear;
-    background: #809fff;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    color: #eee;
-    padding: 0;
-    margin: 0;
+    color: #000;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    line-height: 5;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 
 }
 
 .btn:hover {
-    background: #1a66ff;
+    background: #d1d3d4;
+    transition-duration: 80ms;
 }
 
-
-.btn span {
-    transition: transform 0.3s;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    margin: 0;
-
-}
-
-.btn .leer {
-    z-index: 3;
-    font-weight: bolder;
-}
-
-.blogImg {
-    transition: all 0.3s ease-out;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    float: right;
-    width: 45%;
-
-}
-
-#container img {
-    width: 100%;
-    height: 100%;
-}
-
-.blogImg:hover img {
-    transition: all 0.3s ease-out;
-}
-
-.blogImg:hover img {
-    transform: scale(1.2, 1.2);
+h3 {
+    color: #000;
+    text-align: left;
 }

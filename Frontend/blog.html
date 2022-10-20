@@ -2,86 +2,142 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrómeda - Blog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrómeda - Blog</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Google Fonts-->
+  <!-- Google Fonts-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- FlatIcon -->
+  <!-- FlatIcon -->
 
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
 
 </head>
 
 <body id="bodyBlog">
 
-    <header>
-        <nav class="nav">
-            <div class="container">
-                <div class="logo">
-                    <span><img src="./assets/img/logo.png" alt="" width="80px" class="logo"></span>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="#">Eventos Astronómicos</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </div>
-                <span class="navTrigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-            </div>
-        </nav>
-    </header>
-
-    <div class="headerInicio headerBlog">
-
-        <div>
-            <h1>EL UNIVERSO ENSEÑA</h1>
+  <header>
+    <nav class="nav affix">
+      <div class="container">
+        <div class="logo">
+          <span><img src="./assets/img/logo.png" alt="" width="80px" class="logo"></span>
         </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="#">Eventos Astronómicos</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+  </header>
 
+  <div class="headerInicio headerBlog">
+
+    <div>
+      <h1>EL UNIVERSO ENSEÑA</h1>
     </div>
 
-    <div id="container">
+  </div>
 
-        <div class="cardsBlog">
+  <div class="box">
+    <div class="container">
+      <main class="grid">
+        <article>
+          <div class="text">
+            <h3>🏠 Home</h3>
 
-            <h1>Estrellas fugaces</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
 
-            <p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sunt corporis quo
-                maiores, doloribus possimus ipsum accusantium perspiciatis error accusamus exercitationem culpa nemo
-                dolor facere.</p>
+        <article>
+          <div class="text">
+            <h3>👋 New users</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
+        <article>
+
+          <div class="text">
+            <h3>💡 Tips</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
+        <article>
+          <div class="text">
+            <h3>🗓️ Schedule</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
+
+        <article>
+
+          <div class="text">
+            <h3>🚦 Tasks</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
+        <article>
+          <div class="text">
+            <h3>⛰️ Goals</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
 
 
+        <article>
+          <div class="text">
+            <h3>💻 Workspace</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
 
-            <div class="control">
+        <article>
+          <div class="text">
+            <h3>🚀 Projects</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="" class="btn">read more</a>
+          </div>
+        </article>
 
-                <button class="btn">
-                    <span class="leer"></i>Leer más</span>
-                </button>
-
-            </div>
-
-        </div>
-
-        <div class="blogImg">
-
-            <img src="./assets/img/fugaz.jpg" alt="cielo estrellado con estrella fugaz">
-
-        </div>
+      </main>
     </div>
+  </div>
+
 
 
 
