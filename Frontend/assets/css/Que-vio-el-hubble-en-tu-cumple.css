@@ -305,7 +305,7 @@ footer h3 {
   font-size: 1.5rem;
 }
 
-footer div:nth-child(1) > p {
+footer div:nth-child(2) > p {
   margin-bottom: 20px;
 }
 
@@ -370,6 +370,14 @@ footer label {
 }
 
 @media (max-width: 800px) {
+  footer h3, label, p {
+    text-align: center;
+  }
+  
+  footer > section > div:nth-child(2) > p {
+    margin-bottom: 20px !important;
+  }
+  
   .form-inline input {
     margin: 10px 0;
   }
