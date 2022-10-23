@@ -1,3 +1,14 @@
+// INICIO Header //
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+        $('.nav').addClass('affix');
+        console.log("OK");
+    } else {
+        $('.nav').removeClass('affix');
+    }
+});
+// FIN Header //
+
 // INICIO Código lightbox imágenes //
 const images = document.querySelectorAll('.gallery-img')
 const containerImage = document.querySelector('.image-lightbox')
