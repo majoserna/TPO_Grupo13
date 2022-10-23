@@ -6,163 +6,159 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qué vio el Hubble en el día de tu cumpleaños</title>
-  <link rel="stylesheet" href="../Frontend/assets/css/Que-vio-el-hubble-en-tu-cumple.css">
-  <link rel="stylesheet" href="../Frontend/assets/css/background.css">
+  <link rel="stylesheet" href="../Frontend/assets/css/que-vio-el-hubble-en-tu-cumple.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <script src="../Frontend/assets/js/Que-vio-el-hubble-en-tu-cumple.js"></script>
   <script src="https://kit.fontawesome.com/032e90c204.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
 </head>
 
-<header>
-</header>
-
 <body>
-  <section>
-    <div class="banner">
-      <h2><span>Descubre nuevos misterios</span></h2>
-    </div>
-  </section>
+  <div class="main-container">
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <span><img src="./assets/img/logo.png" alt="" width="80px" class="logo"></span>
+          </div>
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+      </nav>
+    </header>
 
-  <section class="sc-hubble-birthday">
-    <h2 class="text-center">Qué vio el Hubble en el día de tu cumpleaños</h2>
-    <div class="hubble-iframe-container">
-      <iframe src="../Frontend/HubbleBirthday.html" frameborder="0" class="hubble-iframe-content"></iframe>
+    <div class="header">
+      <div>
+        <h1>Descubre nuevos misterios</h1>
+      </div>
     </div>
-  </section>
 
-  <section class="gallery-container">
-    <h2 class="text-center">Galería de imágenes</h2>
-    <div class="lightbox-gallery">
-      <div><img src="https://live.staticflickr.com/65535/49812591788_4cf02d6064_k.jpg"
-          data-image-hd="https://live.staticflickr.com/65535/49812591788_4cf02d6064_k.jpg" alt=""></div>
-      <div><img src="https://picsum.photos/id/155/300/300" data-image-hd="https://picsum.photos/id/155/600/600" alt="">
+    <!--INICIO iframe Hubble Birthday-->
+    <section class="sc-main-child">
+      <div class="child-one">
+        <h2 class="text-center">Qué vio el Hubble en el día de tu cumpleaños</h2>
+        <div class="hubble-iframe-container">
+          <iframe src="HubbleBirthday.html" frameborder="0" class="hubble-iframe-content"></iframe>
+        </div>
       </div>
-      <div><img src="https://picsum.photos/id/11/300/300" data-image-hd="https://picsum.photos/id/11/600/600" alt="">
+    </section>
+    <!--FIN iframe Hubble Birthday-->
+
+    <!--INICIO Galería de imágenes-->
+    <section class="sc-main-child">
+      <div class="child-one">
+        <h2 class="text-center">Galería de imágenes</h2>
+        <div class="image-gallery-container">
+          <img src="../Frontend/assets/img/galeria-img/img1-hd.jpg" alt="Cosmic Reef (2020)" class="gallery-img img-1">
+          <img src="../Frontend/assets/img/galeria-img/img2-hd.jpg" alt="Southern Crab Nebula (2019)"
+            class="gallery-img img-2">
+          <img src="../Frontend/assets/img/galeria-img/img3-hd.jpg" alt="Lagoon Nebula (2018)"
+            class="gallery-img img-3">
+          <img src="../Frontend/assets/img/galeria-img/img4-hd.jpg" alt="Galaxies NGC 4302 and NGC 4298 (2017)"
+            class="gallery-img img-4">
+          <img src="../Frontend/assets/img/galeria-img/img5-hd.jpg" alt="Bubble Nebula (2016)"
+            class="gallery-img img-5">
+          <img src="../Frontend/assets/img/galeria-img/img6-hd.jpg" alt="Westerlund 2 (2015)" class="gallery-img img-6">
+          <img src="../Frontend/assets/img/galeria-img/img7-hd.jpg" alt="Monkey Head Nebula (2014)"
+            class="gallery-img img-7">
+          <img src="../Frontend/assets/img/galeria-img/img8-hd.jpg" alt="Horsehead Nebula in Infrared Light (2013)"
+            class="gallery-img img-8">
+          <img src="../Frontend/assets/img/galeria-img/img9-hd.jpg" alt="Star Factory 30 Doradus (2012)"
+            class="gallery-img img-9">
+          <img src="../Frontend/assets/img/galeria-img/img10-hd.jpg" alt="Colliding Galaxy Pair Arp 273 (2011)"
+            class="gallery-img img-10">
+          <img src="../Frontend/assets/img/galeria-img/img11-hd.jpg" alt="Mystic Mountain (2010)"
+            class="gallery-img img-11">
+          <img src="../Frontend/assets/img/galeria-img/img12-hd.jpg" alt="Interacting Galaxy Group Arp 194 (2009)"
+            class="gallery-img img-12">
+        </div>
+        <!--Div del lightbox-->
+        <div class="image-lightbox">
+          <img src="" alt="" class="img-show">
+          <i class="fa-regular fa-circle-xmark"></i>
+          <p class="img-title"></p>
+        </div>
       </div>
-      <div><img src="https://picsum.photos/id/434/300/300" data-image-hd="https://picsum.photos/id/434/600/600" alt="">
+    </section>
+    <!--FIN Galería de imágenes-->
+
+    <!--INICIO Galería de videos-->
+    <section class="sc-main-child">
+      <div class="child-one">
+        <h2 class="text-center">Galería de videos</h2>
+        <div class="video-gallery-container">
+          <div class="videoYT vid-1"><iframe width="560" height="315" src="https://www.youtube.com/embed/WuVYVXdV0vQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <div class="videoYT vid-2"><iframe width="560" height="315" src="https://www.youtube.com/embed/mwynI6EiY9c"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <div class="videoYT vid-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/PthDXZDRL9c"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <div class="videoYT vid-4"><iframe width="560" height="315" src="https://www.youtube.com/embed/WP5rhrs1bnc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <div class="videoYT vid-5"><iframe width="560" height="315" src="https://www.youtube.com/embed/gWaws_IVeW8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <div class="videoYT vid-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/zdDeN65oSc4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+        </div>
       </div>
-      <div><img src="https://picsum.photos/id/101/300/300" data-image-hd="https://picsum.photos/id/101/600/600" alt="">
-      </div>
-      <div><img src="https://picsum.photos/id/343/300/300" data-image-hd="https://picsum.photos/id/343/600/600" alt="">
-      </div>
-    </div>
-    <h2 class="text-center">Galería de videos</h2>
-    <div class="video-gallery">
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/WuVYVXdV0vQ" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></div>
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/mwynI6EiY9c" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></div>
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/PthDXZDRL9c" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></div>
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/WP5rhrs1bnc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></div>
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/gWaws_IVeW8" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></div>
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/zdDeN65oSc4" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></div>
-    </div>
-  </section>
+    </section>
+    <!--FIN Galería de videos-->
+
+    <footer>
+      <section class="newsletter-form">
+        <div class="logo-footer">
+          <img src="../Frontend/assets/img/logo.png" alt="">
+        </div>
+        <div>
+          <h3>Suscribite al newsletter</h3>
+          <p>Vas a recibir las fechas de los eventos astronómicos en tu casilla de e-mail</p>
+          <form class="form-inline" id="form-news" action="">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Tu nombre">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="tucorreo@email.com">
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+
+        <div id="form-error-message"></div>
+
+        <div class="div-copyright">
+          <b class="hr anim"></b>
+          <p class="copyright">T.P.O. Grupo N°13 - 2022</p>
+          <p class="autoras">Flor | Majo | Romy</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+
+  <script src="../Frontend/assets/js/que-vio-el-hubble-en-tu-cumple.js"></script>
+
 </body>
-
-<footer>
-  <div class="logo-footer">
-    <img src="../Frontend/assets/media/logo.jpg" alt="">
-  </div>
-  <form>
-    <div class="container">
-      <h2>Subscribe to our Newsletter</h2>
-      <p>Lorem ipsum..</p>
-    </div>
-
-    <div class="container" style="background-color:white">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="text" placeholder="Email address" name="mail" required>
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-      </label>
-    </div>
-
-    <div class="container">
-      <input type="submit" value="Subscribe">
-    </div>
-  </form>
-
-  <!--<form class="generated-form">
-        <fieldset>
-          <legend> Student:: </legend>
-           <label for="password">Email:</label><br>
-           <input type="email" id="email" name="email"><br>
-           <label for="text">Text:</label><br>
-           <input type="text" id="text" name="text"><br>
-           <label for="text">Text:</label><br>
-           <input type="text" id="text" name="text"><br>
-           <input type="submit" value="Submit"><br><br>
-        </fieldset>
-        </form>!-->
-</footer>
-
-<!---------------------------------------------------------->
-
-<header id="header">
-  <div id="header-top">
-    <div class="wrapper">
-      <!-- contenido (logo y redes sociales) -->
-    </div>
-  </div>
-  <div id="header-bottom">
-    <div class="wrapper">
-      <!-- contenido (menú y buscador) -->
-    </div>
-  </div>
-</header>
-
-<body>
-  <section id="hero">
-    <div class="wrapper">
-      <!-- contenido (presentacion) -->
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="wrapper">
-      <!-- contenido (servicios) -->
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrapper">
-      <!-- contenido (formulario) -->
-    </div>
-  </section>
-</body>
-
-<footer id="footer">
-  <div id="footer-top">
-    <div class="wrapper">
-      <!-- contenido (listas de enlaces) -->
-    </div>
-  </div>
-  <div id="footer-bottom">
-    <div class="wrapper">
-      <p>Copyright &copy; 2020 Escola Espai.</p>
-      <p>Design by <a href="#">ACB</a></p>
-    </div>
-  </div>
-</footer>
-
 
 </html>
