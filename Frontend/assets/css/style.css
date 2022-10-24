@@ -220,6 +220,10 @@ body {
     padding-top: 25%;
 }
 
+.cards-apiNasa {
+    font-size: 2rem;
+}
+
 @media all and (max-width:700px) {
     .myP {
         padding: 2%;
@@ -341,16 +345,16 @@ body {
 
 .box {
     border-radius: 10px;
-    padding: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 7rem;
     max-width: 1000px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    grid-gap: 20px;
-
-
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 40px;
 }
 
 .grid>article {
@@ -361,9 +365,8 @@ body {
     border-radius: 20px;
 }
 
-
 .grid .text {
-    padding: 10px 20px 20px 30px;
+    padding: 2rem;
     color: #808285;
     margin-bottom: 20px;
 }
@@ -374,12 +377,10 @@ body {
     border: 0;
     border-radius: 5px;
     color: #000;
-    font-size: 15px;
-    padding: 5px 10px 5px 10px;
+    font-size: 1.3rem;
+    padding: 1rem;
     line-height: 5;
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-
 }
 
 .btn:hover {
@@ -387,7 +388,43 @@ body {
     transition-duration: 80ms;
 }
 
-h3 {
+article h2 {
     color: #000;
-    text-align: left;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+article img {
+    width: 100%;
+    justify-content: center;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+article img:hover {
+    filter: saturate(180%)
+    opacity(1)
+}
+
+article p {
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width:400px) {
+    .box {
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 7rem;
+        max-width: 1000px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 40px;
+        background-color: blue;
+        color: blue;
+    }
 }

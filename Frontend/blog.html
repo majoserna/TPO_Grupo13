@@ -63,74 +63,61 @@
       <main class="grid">
         <article>
           <div class="text">
-            <h3>🏠 Home</h3>
+            <img src="./assets/img/estrellafugaz_blog.jpg" alt="cielo con estrella fugaz">
+            <h2>Es hora de pedir un deseo</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. </p>
-            <a href="" class="btn">read more</a>
+            <a href="" class="btn">Leer más</a>
           </div>
         </article>
 
         <article>
           <div class="text">
-            <h3>👋 New users</h3>
+            <img src="./assets/img/lunallena_blog.jpg" alt="luna llena">
+            <h2>La magia de la luna llena</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. </p>
-            <a href="" class="btn">read more</a>
+            <a href="" class="btn">Leer más</a>
           </div>
         </article>
         <article>
 
           <div class="text">
-            <h3>💡 Tips</h3>
+            <img src="./assets/img/nebulosa_blog.jpg" alt="nebulosa roja">
+            <h2>Las nebulosas</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. </p>
-            <a href="" class="btn">read more</a>
+            <a href="" class="btn">Leer más</a>
           </div>
         </article>
         <article>
           <div class="text">
-            <h3>🗓️ Schedule</h3>
+            <img src="./assets/img/solsticio_blog.jpg" alt="burbuja de jabón congelandose">
+            <h2>Vivir el solsticio invernal</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
-            <a href="" class="btn">read more</a>
+            <a href="" class="btn">Leer más</a>
           </div>
         </article>
 
         <article>
 
           <div class="text">
-            <h3>🚦 Tasks</h3>
+            <img src="./assets/img/marte_blog.jpg" alt="nave llegando a marte">
+            <h2>El planeta rojo</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. </p>
-            <a href="" class="btn">read more</a>
+            <a href="" class="btn">Leer más</a>
           </div>
         </article>
         <article>
           <div class="text">
-            <h3>⛰️ Goals</h3>
+            <img src="./assets/img/galaxia_blog.jpg" alt="galaxia">
+            <h2>El infinito</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
-            <a href="" class="btn">read more</a>
-          </div>
-        </article>
-
-
-        <article>
-          <div class="text">
-            <h3>💻 Workspace</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="" class="btn">read more</a>
-          </div>
-        </article>
-
-        <article>
-          <div class="text">
-            <h3>🚀 Projects</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="" class="btn">read more</a>
+            <a href="" class="btn">Leer más</a>
           </div>
         </article>
 
@@ -139,7 +126,24 @@
   </div>
 
 
+<script>
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
 
+});
+
+$(window).scroll(function () {
+    if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
+      console.log("OK");
+    } else {
+      $('.nav').removeClass('affix');
+    }
+  });
+</script>
 
 </body>
 

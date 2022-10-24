@@ -72,7 +72,34 @@
   </div>
 
 
+<div class="container">
+  <div class="cards-apiNasa">
+      <p id="titulo"></p>
+      <p id="fecha"></p>
+      <p id="descripcion"></p>
+      <div id="imagen" class="embed-responsive embed responsive-21by9 text-center"></div>
+  </div>
+</div>
 
+
+<script>
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+
+$(window).scroll(function () {
+    if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
+      console.log("OK");
+    } else {
+      $('.nav').removeClass('affix');
+    }
+  });
+</script>
 
 
 
