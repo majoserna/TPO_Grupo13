@@ -17,5 +17,5 @@ function mostrarDatos({title, explanation, date, url}){
   const descripcion = document.querySelector('#descripcion');
   descripcion.innerHTML = explanation;
   const imagen = document.querySelector('#imagen');
-  imagen.innerHTML = `<img src="${url}" class="img-fluid" alt="${url}">`;
+  imagen.innerHTML = `<img src="${url}" alt="${url}" style="width: 100%; border-radius: 15px;">`;
 }
