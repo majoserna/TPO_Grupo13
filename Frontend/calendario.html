@@ -5,71 +5,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Calendario Astronómico</title>
-  <link rel="stylesheet" href="/Frontend/assets/css/calendario.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/032e90c204.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
- 
 </head>
 
 <body>
-  <div class="main-container">
-    <header>
-      <nav class="nav">
-        <div class="container">
-          <div class="logo">
-            <span><img src="/Frontend/assets/img/logo.png" alt="" width="80px" class="logo"></span>
-          </div>
-          <div id="mainListDiv" class="main_list">
-            <ul class="navlinks">
-              <li><a href="">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <span class="navTrigger">
-            <i></i>
-            <i></i>
-            <i></i>
-          </span>
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <span> <a href="inicio.html"> <img src="./assets/img/logo.png" alt="" width="80px" class="logo"></a></span>
         </div>
-      </nav>
-    </header>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="calendario.html">Eventos Astronómicos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+  </header>
 
-    <div class="header">
-      <div>
-        <h1>Descubre el universo</h1>
+  <div class="headerInicio headerCalendario">
+    <div>
+      <h1>SIEMPRE HAY ALGO NUEVO</h1>
+    </div>
+  </div>
+
+  <!--INICIO CALENDARIO-->
+  <section class="sc-main-child-calendario">
+    <div class="child-one">
+      <h2 class="text-center-calendario">Calendario Astronómico</h2>
+      <div class="center">
+        <div id="caleandar"></div>
+      </div>
+      <div clas="audio">
+        <h2 class="text-center-calendario">Sonidos del Universo</h2>
+        <audio controls style="margin: 0 auto; display: block;">
+          <source src="/Frontend/assets/media/Sonidos del espacio captados por la NASA.mp3" type="audio/mpeg">
+          Tu explorador no es compatible con el audio
+        </audio>
+        <br />
       </div>
     </div>
- 
-    <!--INICIO CALENDARIO-->
-    <section class="sc-main-child">
-      <div class="child-one">
-        <h2 class="text-center">Calendario Astronómico</h2>
-          <div class="center">
-            <div id="caleandar"></div>
-          </div>
-          <div clas="audio">
-            <h2 class="text-center">Sonidos del Universo</h2>
-            <audio controls style="margin: 0 auto; display: block;" >
-              <source src="/Frontend/assets/media/Sonidos del espacio captados por la NASA.mp3" type="audio/mpeg">
-                 Tu explorador no es compatible con el audio
-            </audio>
-            <br/>
-          </div>
-      </div>
-        
-    <script src="/Frontend/assets/js/calendario.js"></script>
-    <script src="/Frontend/assets/js/eventos_astronomicos.js"></script>
+
     <footer>
       <section class="newsletter-form">
         <div class="logo-footer">
-          <img src="/Frontend/assets/img/logo.png" alt="">
+          <a href="calendario.html"><img src="../Frontend/assets/img/logo.png" alt=""></a>
         </div>
         <div>
           <h3>Suscribite al newsletter</h3>
@@ -93,22 +91,10 @@
       </section>
 
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/Frontend/assets/js/custom.js"></script>
-    
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
-    </script>
 
-  
+    <script src="../Backend/calendario.js"></script>
+    <script src="../Backend/validacionFormulario.js"></script>
+    <script src="../Backend/navbar.js"></script>
 
 </body>
 
