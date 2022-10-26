@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrómeda - Eventos Astronómicos</title>
+
+  <link rel="stylesheet" href="./Frontend/assets/css/style.css">
+
+  <!-- Google Fonts-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <span> <a href="index.html"> <img src="./Frontend/assets/img/logo.png" alt="" width="80px" class="logo"></a></span>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./Frontend/calendario.html">Eventos Astronómicos</a></li>
+            <li><a href="./Frontend/galeria.html">Galería</a></li>
+            <li><a href="./Frontend/blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="headerInicio">
+
+    <div>
+      <h1>SER PARTE DEL UNIVERSO</h1>
+    </div>
+  </div>
+
+
+  <div class="cards">
+    <div class="card">
+      <h2 class="card-title">Quienes somos</h2>
+      <img src="./Frontend/assets/img/card1.jpg" alt="aurora boreal">
+      <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere nemo beatae
+        perspiciatis soluta nobis natus quas dolorum amet debitis. Quos debitis at, odio architecto sunt harum! Saepe
+        odio perspiciatis unde fugit, et, sed sequi natus sit dolorum doloremque expedita, ipsa tempore hic molestiae
+        distinctio qui perferendis. Error, ipsum officiis?</p>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Donde vamos</h2>
+      <img src="./Frontend/assets/img/card2.jpg" alt="cielo estrellado">
+      <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque sit maxime laborum
+        placeat, est quisquam! Rem vitae dolorem reprehenderit minus repellendus, tempore eaque? Eligendi incidunt
+        nesciunt consequuntur nostrum amet placeat magnam expedita delectus aliquam voluptatum corrupti quam ex
+        obcaecati sequi, quidem alias? Repudiandae veritatis assumenda fuga, provident repellendus omnis autem.</p>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Descubramos</h2>
+      <img src="./Frontend/assets/img/card3.jpg" alt="estrella fugaz">
+      <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste praesentium aliquam vitae
+        soluta, neque officia. Quod cumque deleniti laboriosam, quis tempore ullam rem commodi fugiat animi minima?
+        Vitae hic ipsa nostrum pariatur eius id ullam atque corrupti distinctio, quisquam, architecto consequuntur
+        deleniti perspiciatis repellendus quas perferendis numquam reiciendis laborum quidem.</p>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <h2 class="imagenApi">Imagen del día</h2>
+    <div id="titulo" class="titulo_inicio"></div>
+    <p id="fecha" class="subtitulo_inicio"></p>
+    <p id="descripcion" class="parrafo_inicio"></p>
+    <div class="cuerpo">
+      <div id="imagen" class="embed-responsive embed responsive-21by9 text-center"></div>
+    </div>
+  </div>
+
+  <footer>
+    <section class="newsletter-form">
+      <div class="logo-footer">
+        <a href="index.html"><img src="../Frontend/assets/img/logo.png" alt=""></a>
+      </div>
+      <div>
+        <h3>Suscribite al newsletter</h3>
+        <p>Vas a recibir las fechas de los eventos astronómicos en tu casilla de e-mail</p>
+        <form class="form-inline" id="form-news" action="">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" placeholder="Tu nombre">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="tucorreo@email.com">
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+
+      <div id="form-error-message"></div>
+
+      <div class="div-copyright">
+        <b class="hr anim"></b>
+        <p class="copyright">T.P.O. Grupo N°13 - 2022</p>
+        <p class="autoras">Flor | Majo | Romy</p>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./Backend/api.js"></script>
+  <script src="../Backend/validacionFormulario.js"></script>
+  <script src="../Backend/navbar.js"></script>
+
+</body>
+
+</html>

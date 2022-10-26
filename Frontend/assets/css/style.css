@@ -12,6 +12,7 @@ body {
     width: 100%;
     position: fixed;
     text-align: center;
+    z-index: 2;
 }
 
 .nav div.logo {
@@ -349,6 +350,7 @@ body {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    z-index: 1;
 }
 
 .card {
@@ -398,7 +400,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 80%;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px #7e54949f;
     border-radius: 15px;
@@ -458,7 +460,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 40px;
 }
 

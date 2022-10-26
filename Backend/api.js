@@ -11,7 +11,7 @@ function obtenerDatos(){
   .then(result=>mostrarDatos(result))
 }
 
-function mostrarDatos({title, explanation, date, url}){
+function mostrarDatos({title, explanation, date, url, media_type}){
   const titulo = document.querySelector('#titulo');
   titulo.innerHTML = title;
   const fecha = document.querySelector('#fecha');
@@ -19,5 +19,13 @@ function mostrarDatos({title, explanation, date, url}){
   const descripcion = document.querySelector('#descripcion');
   descripcion.innerHTML = explanation;
   const imagen = document.querySelector('#imagen');
-  imagen.innerHTML = `<img src="${url}" alt="${url}" style="width: 100%; border-radius: 15px;">`;
+  if (media_type == 'video')
+  {
+    imagen.innerHTML = `<iframe src="${url}" alt="${url}" style="width: 100%; height: 350px; border-radius: 15px;">`;
+    console.log(2);
+  }
+  else {
+    imagen.innerHTML = `<img src="${url}" alt="${url}" style="width: 100%; border-radius: 15px;">`;
+    console.log(3);
+  }
 }
